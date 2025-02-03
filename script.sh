@@ -1,12 +1,10 @@
 #!/bin/bash
 
 # 提示用户输入 root 密码
-echo "请输入新的 ROOT 密码（输入时不会显示）:"
-read -s NEW_PASS
+read -p "请输入新的 ROOT 密码: " NEW_PASS
 
 # 确认密码
-echo "请再次输入新的 ROOT 密码:"
-read -s CONFIRM_PASS
+read -p "请再次输入新的 ROOT 密码: " CONFIRM_PASS
 
 # 检查两次输入是否一致
 if [ "$NEW_PASS" != "$CONFIRM_PASS" ]; then
