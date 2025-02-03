@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 设置新的 root 密码
-NEW_PASS="NewSecurePass123"
+NEW_PASS="Qiu136569!@#"
 
 # 修改 root 密码
 echo -e "$NEW_PASS\n$NEW_PASS" | passwd root
